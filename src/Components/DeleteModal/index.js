@@ -2,8 +2,8 @@ import React from 'react';
 import './index.css';
 import { useDispatch } from 'react-redux';
 import { removeItem } from '../../Store/Reducers/taskReducer';
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import CloseIcon from '@mui/icons-material/Close';
+// import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+// import CloseIcon from '@mui/icons-material/Close';
 
 const DeleteModal = ({ onClose, id }) => {
 
@@ -20,8 +20,8 @@ const DeleteModal = ({ onClose, id }) => {
         {/* <span className="close-icon" onClick={onClose}>
           &times;
         </span> */}
-        <CloseIcon style={{color:'black'}} className="close-icon" onClick={onClose} />
-        <DeleteForeverIcon style={{color:'red'}} className="delete-icon" fontSize='large' />
+        {/*<CloseIcon style={{color:'black'}} className="close-icon" onClick={onClose} />
+      <DeleteForeverIcon style={{color:'red'}} className="delete-icon" fontSize='large' />*/}
         <div className="modal-content">
         <p>Are you sure?</p>
           <p>Do you really want to delete this customer?</p>
